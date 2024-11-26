@@ -119,6 +119,39 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &118802002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 118802003}
+  m_Layer: 0
+  m_Name: RightToLeft
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &118802003
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118802002}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1810051561}
+  - {fileID: 657705963}
+  m_Father: {fileID: 2018093511}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,6 +289,143 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &657705962
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 657705963}
+  - component: {fileID: 657705964}
+  m_Layer: 0
+  m_Name: CarSpawner4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &657705963
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657705962}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.55, y: 4.52, z: 12.342296}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 118802003}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &657705964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657705962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08e4474d579ef1246be9f037bbcc3358, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carPrefabs:
+  - {fileID: 183838, guid: 591970d4d5b203b459057ebf4cd1aa8f, type: 3}
+  - {fileID: 186698, guid: 332e0e9fe16bf4567ae4083692f4fcbd, type: 3}
+  - {fileID: 117868, guid: 15f754372833a4ce8be9c962ee0bb874, type: 3}
+  spawnInterval: 1.94
+  movementDirection: {x: -1, y: 0, z: 0}
+  carSpeed: 5
+--- !u!1 &669724374
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 669724375}
+  - component: {fileID: 669724376}
+  m_Layer: 0
+  m_Name: CarSpawner3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &669724375
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669724374}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -13.548918, y: 2.85, z: 12.342296}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 800208593}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &669724376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669724374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08e4474d579ef1246be9f037bbcc3358, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carPrefabs:
+  - {fileID: 186698, guid: 30fce0a9bc7d12749ae96cb8a6eeb36e, type: 3}
+  - {fileID: 183838, guid: 384aea985b03744478ae103e04ec6715, type: 3}
+  - {fileID: 117868, guid: e141c14409954424986ba5e95bba69d7, type: 3}
+  - {fileID: 117432, guid: d2bae12992f47464f8643489be873e58, type: 3}
+  - {fileID: 154818, guid: b236f43bbde914f6ebb0efe064ef7b64, type: 3}
+  spawnInterval: 2
+  movementDirection: {x: 1, y: 0, z: 0}
+  carSpeed: 8.03
+--- !u!1 &800208592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 800208593}
+  m_Layer: 0
+  m_Name: LeftToRight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &800208593
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800208592}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2066291970}
+  - {fileID: 669724375}
+  m_Father: {fileID: 2018093511}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &913353153
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,7 +524,7 @@ GameObject:
   - component: {fileID: 1810051561}
   - component: {fileID: 1810051562}
   m_Layer: 0
-  m_Name: CarSpawner1
+  m_Name: CarSpawner2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -373,7 +543,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2018093511}
+  m_Father: {fileID: 118802003}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1810051562
 MonoBehaviour:
@@ -388,12 +558,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carPrefabs:
-  - {fileID: 186698, guid: 332e0e9fe16bf4567ae4083692f4fcbd, type: 3}
   - {fileID: 183838, guid: 591970d4d5b203b459057ebf4cd1aa8f, type: 3}
+  - {fileID: 186698, guid: 332e0e9fe16bf4567ae4083692f4fcbd, type: 3}
   - {fileID: 117868, guid: 15f754372833a4ce8be9c962ee0bb874, type: 3}
   spawnInterval: 3
   movementDirection: {x: -1, y: 0, z: 0}
-  carSpeed: 5
+  carSpeed: 7.91
 --- !u!1 &2018093510
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,8 +593,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2066291970}
-  - {fileID: 1810051561}
+  - {fileID: 800208593}
+  - {fileID: 118802003}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2066291968
@@ -438,7 +608,7 @@ GameObject:
   - component: {fileID: 2066291970}
   - component: {fileID: 2066291969}
   m_Layer: 0
-  m_Name: CarSpawner
+  m_Name: CarSpawner1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -457,9 +627,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carPrefabs:
-  - {fileID: 186698, guid: 332e0e9fe16bf4567ae4083692f4fcbd, type: 3}
+  - {fileID: 186698, guid: 30fce0a9bc7d12749ae96cb8a6eeb36e, type: 3}
   - {fileID: 183838, guid: 384aea985b03744478ae103e04ec6715, type: 3}
-  - {fileID: 117868, guid: 15f754372833a4ce8be9c962ee0bb874, type: 3}
+  - {fileID: 117868, guid: e141c14409954424986ba5e95bba69d7, type: 3}
+  - {fileID: 117432, guid: d2bae12992f47464f8643489be873e58, type: 3}
+  - {fileID: 154818, guid: b236f43bbde914f6ebb0efe064ef7b64, type: 3}
   spawnInterval: 3
   movementDirection: {x: 1, y: 0, z: 0}
   carSpeed: 5
@@ -476,7 +648,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2018093511}
+  m_Father: {fileID: 800208593}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1562642869909231743
 PrefabInstance:

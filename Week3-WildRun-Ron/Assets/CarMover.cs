@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class CarMover : MonoBehaviour
 {
+    [SerializeField]
     private Vector3 movementDirection = Vector3.right; // Default movement direction
     private float speed = 5f; // Default speed
 

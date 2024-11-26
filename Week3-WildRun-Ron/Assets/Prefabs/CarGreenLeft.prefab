@@ -277,6 +277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34a14dd14a044c441bfdb6b5824e67d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementDirection: {x: -1, y: 0, z: 0}
 --- !u!1 &186772
 GameObject:
   m_ObjectHideFlags: 0

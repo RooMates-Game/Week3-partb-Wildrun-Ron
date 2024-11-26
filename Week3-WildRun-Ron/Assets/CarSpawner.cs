@@ -27,9 +27,9 @@ public class CarSpawner : MonoBehaviour
         // Randomly select a car prefab
         GameObject carToSpawn = carPrefabs[Random.Range(0, carPrefabs.Length)];
 
-        // Spawn the car at the spawner's position
+        // Use the prefab's default rotation
         Vector3 spawnPosition = transform.position;
-        Quaternion spawnRotation = transform.rotation;
+        Quaternion spawnRotation = carToSpawn.transform.rotation;
 
         // Instantiate the car prefab
         GameObject newCar = Instantiate(carToSpawn, spawnPosition, spawnRotation);

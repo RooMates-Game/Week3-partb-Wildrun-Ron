@@ -221,7 +221,33 @@ CapsuleCollider2D:
   m_Offset: {x: -0.08012163, y: -1.0787122}
   m_Size: {x: 2.556118, y: 3.045076}
   m_Direction: 0
---- !u!114 &468511071
+--- !u!114 &468511075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468511065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1b315ed82c94d74e90101f44d16f4bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &468511076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468511065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6466596b755d244aa5d87399bec4232, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggeringTag: ToNextLevel
+  sceneName: level-win
+--- !u!114 &468511077
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -476,6 +502,124 @@ MonoBehaviour:
   spawnInterval: 2
   movementDirection: {x: 1, y: 0, z: 0}
   carSpeed: 8.03
+--- !u!1 &720131097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 720131101}
+  - component: {fileID: 720131100}
+  - component: {fileID: 720131099}
+  - component: {fileID: 720131098}
+  m_Layer: 0
+  m_Name: ToNextLevel
+  m_TagString: ToNextLevel
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &720131098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720131097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6466596b755d244aa5d87399bec4232, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggeringTag: Player
+  sceneName: level-win
+--- !u!50 &720131099
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720131097}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!68 &720131100
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720131097}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.5, y: 0}
+  - {x: 0.5, y: 0}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!4 &720131101
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720131097}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
+  m_LocalPosition: {x: 0.21, y: 4.5, z: -21.453304}
+  m_LocalScale: {x: 21.02784, y: 14.2968, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
 --- !u!1 &800208592
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,6 +1021,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7191557614717910218, guid: 4cda10acc6c16a64794263d0e37adcc3, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -889,7 +1037,13 @@ PrefabInstance:
       addedObject: {fileID: 468511069}
     - targetCorrespondingSourceObject: {fileID: 7191557614717910218, guid: 4cda10acc6c16a64794263d0e37adcc3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 468511071}
+      addedObject: {fileID: 468511076}
+    - targetCorrespondingSourceObject: {fileID: 7191557614717910218, guid: 4cda10acc6c16a64794263d0e37adcc3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 468511075}
+    - targetCorrespondingSourceObject: {fileID: 7191557614717910218, guid: 4cda10acc6c16a64794263d0e37adcc3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 468511077}
   m_SourcePrefab: {fileID: 100100000, guid: 4cda10acc6c16a64794263d0e37adcc3, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -899,3 +1053,4 @@ SceneRoots:
   - {fileID: 913353155}
   - {fileID: 1562642869909231743}
   - {fileID: 2018093511}
+  - {fileID: 720131101}

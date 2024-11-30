@@ -7,7 +7,7 @@ public class RestrictVerticalMovement : MonoBehaviour
 
     void Start()
     {
-        mainCamera = Camera.main; 
+        mainCamera = Camera.main;
         spawnYPosition = transform.position.y; // Save the initial Y position of the player
     }
 
